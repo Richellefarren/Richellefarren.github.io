@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My First Web Page</title>
     <style>
-        li {color:palevioletred; font-size: 14px;}
+        li {color:palevioletred; font-size: 15px;}
         td {background:rgb(211, 233, 238)}
         th {background:rgb(245, 188, 188)}
         li {display: inline;padding-left: 20px;padding-right:20px;}
@@ -14,7 +14,8 @@
         text-decoration: none}
         a:visited {   
         color:rgb(255, 255, 255)}
-        body {margin-left:100px;margin-right: 100px;}
+
+        #Front-page {margin-left:100px;margin-right: 100px;}
     
         header {
             min-height: 30px;
@@ -29,7 +30,34 @@
         header .container-fluid {
             max-width: 1850px;
         }
+
         
+        #Infographic {
+            height: 500px;
+            background:rgb(104, 164, 199);
+        }
+
+        #Quick {
+            margin-left:100px;margin-right: 100px;
+        }
+
+        #must-buy {
+            margin-left:100px;margin-right: 100px;
+        }
+
+        .column {
+            float: left;
+            width: 33.33%;
+            text-align: center;
+    
+            }
+
+/* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;}
+
         </style>
     
 </head>
@@ -43,48 +71,82 @@ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida San
                             <ul class="navbar;"
                             style="display: block;
                             text-align: right;
-                            padding: 16px;
+                            padding: 13px;
                             text-decoration: none;
-                            list-style: none">
-                                
+                            list-style: none">  
+                            <li style="margin-right: 750px; font-size: 30px;color:white; font-weight: bold;">CAKE·WALK</li>
                             <li><a href="indexnew.html">Home</a></li>
                             <li><a href="">About Me</a></li>
                             <li><a href="" target="_blank" rel="noopener noreferrer">Recipes</a></li>
                             <li><a href="" target="_blank" rel="noopener noreferrer">Tips</a></li>
-                            </ul>
-                    
+                            </ul>   
                     </div>
                 </div>
             </div>
         </div>
     </header><br><br><br><br><br><br><br><br>
+    <br><br>
+    <br><br>
 
 
     <div id="Front-page">
-            <h1> Cook in Simplicity <br> and Convenience</h1>
-            <h3>Know how much time and<br>resources you need for <br> your cooking needs</h3>
-
-        <br>
+            <h1> Cooking can be Simple <br> and Convenient</h1>
+            <h3>Know the time and resources <br> required for your  <br>cooking needs</h3>
+        <br><br><br><br><br><br><br>
+        <br><br><br>
     </div>
    
-    <h3>Quick Western Dishes</h3>
-    <p style="text-align:left;">Easy and under one hour to make!</p>
-    <iframe class="airtable-embed" src="https://airtable.com/embed/shr50xRqqO48dHoRf?backgroundColor=red&viewControls=on" frameborder="0" onmousewheel="" 
-    width="100%" height="533" style="background: transparent; border: 1px solid #f0b802;"></iframe><br><br>
+    <div id="Infographic" style="color:white">
+        <div class="row">
+            <div class="column">
+                <br><br>
+                <h2>Time Efficient</h2>
+                <img src="https://cdn.iconscout.com/icon/free/png-256/time-1855956-1574162.png"; width="260px">
+                <p>Save time in grocery shopping,<br> preparing, and making food</p>
+            </div>
+            <div class="column">
+                <br><br>
+                <h2>Painless Groceries</h2>
+                <img src="https://www.buffalocitymission.org/wp-content/uploads/2012/09/groceries.png"; width="240px">
+                <br><br>
+                <p>Easy remembering, searching, and <br> utilising ingredients</p>
+            </div>
+            <div class="column">
+                <br><br>
+                <h2>Beginner Friendly</h2>
+                <img src="https://www.shareicon.net/data/2016/10/05/839319_cooking_512x512.png"; width="240px">
+                <br><br>
+                <p>Simple, comprehensible methods,<br> starting from the basics</p>
+            </div>
+          </div>  
+    </div><br><br><br><br>
 
-    <h3>Quick Asian Dishes</h3>
-    <p style="text-align:left;">Easy and under one hour to make!</p>
-    <iframe class="airtable-embed" src="https://airtable.com/embed/shrBSqNzSijWEfdtY?backgroundColor=red&viewControls=on" frameborder="0" onmousewheel="" 
-    width="100%" height="533" style="background: transparent; border: 1px solid#f0b802;"></iframe><br><br>
+    
 
-    <h3>Must-buy Ingredient: Garlic!</h3>
-    <p style="text-align:left;">Most recipes have garlic</p>
-    <iframe class="airtable-embed" src="https://airtable.com/embed/shruLYzHAz4fwDtjQ?backgroundColor=red&viewControls=on" frameborder="0" onmousewheel="" 
-    width="100%" height="533" style="background: transparent; border: 1px solid #f0b802;"></iframe><br><br>
+    <div id="Quick">
+        <h3>Quick Western Dishes</h3>
+        <p style="text-align:left;">Easy and under one hour to make!</p>
+        <iframe class="airtable-embed" src="https://airtable.com/embed/shr50xRqqO48dHoRf?backgroundColor=red&viewControls=on" frameborder="0" onmousewheel="" 
+        width="100%" height="533" style="background: transparent; border: 1px solid #f0b802;"></iframe><br><br>
+    
+        <h3>Quick Asian Dishes</h3>
+        <p style="text-align:left;">Easy and under one hour to make!</p>
+        <iframe class="airtable-embed" src="https://airtable.com/embed/shrBSqNzSijWEfdtY?backgroundColor=red&viewControls=on" frameborder="0" onmousewheel="" 
+        width="100%" height="533" style="background: transparent; border: 1px solid#f0b802;"></iframe><br><br>
+    </div>
+    
+    <div id="must-buy">
+        <h3>Must-buy Ingredient: Garlic!</h3>
+        <p style="text-align:left;">Here are some recipes that uses garlic</p>
+        <iframe class="airtable-embed" src="https://airtable.com/embed/shruLYzHAz4fwDtjQ?backgroundColor=red&viewControls=on" frameborder="0" onmousewheel="" 
+        width="100%" height="533" style="background: transparent; border: 1px solid #f0b802;"></iframe><br><br>
 
-    <h3>Must-buy Condiment: Soy sauce!</h3>
-    <p style="text-align:left;">Most Asian recipes uses soy sauc.</p>
-    <iframe class="airtable-embed" src="https://airtable.com/embed/shrsMUwFaMoOKKHf9?backgroundColor=red&viewControls=on" frameborder="0" onmousewheel="" 
-    width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
+        <h3>Must-buy Condiment: Soy sauce!</h3>
+        <p style="text-align:left;">Here are some recipes that uses soy sauce</p>
+        <iframe class="airtable-embed" src="https://airtable.com/embed/shrsMUwFaMoOKKHf9?backgroundColor=red&viewControls=on" frameborder="0" onmousewheel="" 
+        width="100%" height="533" style="background: transparent; border: 1px solid#f0b802;"></iframe>
+
+    </div>
+    
 </body> 
 </html>
