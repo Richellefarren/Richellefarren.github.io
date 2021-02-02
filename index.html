@@ -5,150 +5,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My First Web Page</title>
     <style>
-        li {color:palevioletred}
+        li {color:palevioletred; font-size: 14px;}
         td {background:rgb(211, 233, 238)}
         th {background:rgb(245, 188, 188)}
-        li {display: inline;padding-left: 20px;padding-right:20px; border-right:0.2em solid; color:#b7d6e2;
-            background:rgb(46, 46, 46);
-            border-left:1em solid; color:rgb(83, 83, 83);}
+        li {display: inline;padding-left: 20px;padding-right:20px;}
          a:link {
-        color: white}
+        color: white;
+        text-decoration: none}
         a:visited {   
-        color:rgb(246, 223, 253)}
-        address {
-            margin-top: 1em;
-            padding-top: 1em;
-            border-top:thin dashed;color:rgb(104, 93, 93); margin-left:200px;margin-right: 200px;}
+        color:rgb(255, 255, 255)}
+        body {margin-left:100px;margin-right: 100px;}
+    
+        header {
+            min-height: 30px;
+            background: #f0b802;
+            padding: 0px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 998;
+        }
+        header .container-fluid {
+            max-width: 1850px;
+        }
         
-    * {box-sizing: border-box;}
-
-    .img-container {
-        float: left;
-        width: 50%;
-        padding: 20px;}       
-
-    .clearfix::after {
-        content: "";
-        clear: both;
-        display: table;
-        }
-    .center {
-        display: block;
-        margin-left: 300px;
-        margin-right: 200px;
-        width: 50%;}
-    section {
-        border-color: blue;
-        width: 100%
-        float: left;}
+        </style>
     
-        div {
-        margin-left: 50px;
-        margin-right: 300px;
-        width: 270px;
-        height: 150px;
-        }
-
-        .left {
-        float: left;
-       
-        }
-
-        .right {
-        float: right;
-       
-            </style>
-            <link rel="stylesheet" href="mystyle.css">
 </head>
-<body style="background: rgb(248, 244, 234);color:rgb(235, 128, 128);
+<body style="background: rgb(243, 242, 239);color:rgb(58, 58, 58);
 font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
-    <h3 style="
-         text-align: center;
-         border:solid; border-color: rgb(0, 0, 0);
-         border-width:2px; 
-         border-left:transparent; border-right:transparent;
-         padding-top: 10pt;padding-bottom:10pt;
-         color:rgb(0, 0, 0)
-            ">richelle farren</h3>
-    <ul class="navbar;"
-        style="display: block;
-        text-align: center;
-        padding: 16px;
-        text-decoration: none;
-        list-style: none">
-             
-        <li><a href="index.html">Home</a></li>
-        <li><a href="aboutme.html">About Me</a></li>
-        <li><a href="https://docs.google.com/presentation/d/1ql4jGPkHKVBuK7vWSNpMTbu3BzHwUqh3F86-h7oR8SY/edit?usp=sharing" target="_blank" rel="noopener noreferrer">Sales Report</a></li>
-        <li><a href="https://docs.google.com/presentation/d/1Z-FYmweoZrtCG00tIK8hullaYTTC2jwDVgnOlwbQUwM/edit?usp=sharing" target="_blank" rel="noopener noreferrer">Portfolio</a></li>
-      </ul>
-
-    <br><br>
-    <section>
-    <div class="left">
-        <p style="font-size: 25pt; font-weight: bold;">Hello!
-    <p style="color:black; font-size:11pt">My name is Richelle Farren, a business student in my penultimate year concentrating in entrepreneurship and human resource management.</p>
-        <b style="color:rgb(255, 174, 97);">I like</b>
-        <i style="color:rgb(174, 149, 243);">to be</i>
-        <u style="color:rgb(41, 206, 165);">creative</u>
-        <sub style="color:rgb(80, 190, 253);">in everything</sub>
-        <sup style="color:rgb(116, 94, 238);">I do</sup>
-    </div>    
-    <div class="right">
-        <img src="https://i.pinimg.com/originals/74/dc/ea/74dceaa2875fb215239d86d993524fda.jpg" alt="Aesthetic" style="width:100%"
-    </div></section>
-    <br><br>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> 
-    
-    <p style=" text-align:center; margin-left:200px;margin-right: 200px;font-size: 11pt"> 
-        This website is an online portfolio about myself and what I do,
-        including my strengths and my personal projects.
-      
-
-    <address style="font-size: 9pt;">Made 20 January 2021<br>
-        by myself, with the help of google.</address><br><br><br>
-    
-    
-    <p style="text-align: center; font-size: 20px; color:rgb(12, 12, 12); font-weight:bold"> My Strengths Summary</p>
-
-    <table border=1 style="color:black; text-align: center; margin-left: 300px; margin-right: 200px;" cellspacing=0 cellpadding=15 >
-        <tr>
-            <th>Strength</th><th>Description</th>
-        </tr>
-            <td>Committed</td><td>I am willing to go above and beyond, and take ownership of my projects </td>
-        </tr>
-        <tr>
-            <td>Optimistic</td><td>I always seek for the light at the end of the tunnel </td>
-        <tr>
-            <td>Sympathetic</td><td>I can understand and see from different perspectives</td>
-        </tr>
-    </table><br><br>  
-
-
-    <div class="clearfix">
-        <div class="img-container">
-        <img src="https://static.thenounproject.com/png/2795408-200.png" alt="Committed" style="width:100%"  class="center">
+    <header>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="full">
+                            <ul class="navbar;"
+                            style="display: block;
+                            text-align: right;
+                            padding: 16px;
+                            text-decoration: none;
+                            list-style: none">
+                                
+                            <li><a href="indexnew.html">Home</a></li>
+                            <li><a href="">About Me</a></li>
+                            <li><a href="" target="_blank" rel="noopener noreferrer">Recipes</a></li>
+                            <li><a href="" target="_blank" rel="noopener noreferrer">Tips</a></li>
+                            </ul>
+                    
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="img-container">
-        <img src="https://static.thenounproject.com/png/2514115-200.png" alt="Optimistic" style="width:100%"  class="center">
-        </div>
-        <div class="img-container">
-        <img src="https://static.thenounproject.com/png/3013385-200.png" alt="Sympathetic" style="width:100%" class="center">
-        </div>
-        </div>
-        <h3 style="text-align: center; color: black;">Committed</h3><br>
-        <h3 style="text-align: center; color: black;">Optimistic</h3><br>
-        <h3 style="text-align: center; color: black;">Sympathetic</h3><br><br><br><br><br><br><br><br><br><br>
+    </header><br><br><br><br><br><br><br><br>
 
-    <p style="font-size: 11pt; text-align:center; color:gray"> Thank you and have a great day!</p>
-    
-    <form action="/html/tags/html_form_tag_action.cfm" method="post" style="text-align: left;">
-        <div>
-        <textarea name="comments" id="comments" style="font-family:sans-serif;font-size:16px;">
-        What do you think of my website?
-        </textarea>
-        </div>
-        <input type="submit" value="Submit">
-        </form><br> <br> 
-</body>
+
+    <div id="Front-page">
+            <h1> Cook in Simplicity <br> and Convenience</h1>
+            <h3>Know how much time and<br>resources you need for <br> your cooking needs</h3>
+
+        <br>
+    </div>
+   
+    <h3>Quick Western Dishes</h3>
+    <p style="text-align:left;">Easy and under one hour to make!</p>
+    <iframe class="airtable-embed" src="https://airtable.com/embed/shr50xRqqO48dHoRf?backgroundColor=red&viewControls=on" frameborder="0" onmousewheel="" 
+    width="100%" height="533" style="background: transparent; border: 1px solid #f0b802;"></iframe><br><br>
+
+    <h3>Quick Asian Dishes</h3>
+    <p style="text-align:left;">Easy and under one hour to make!</p>
+    <iframe class="airtable-embed" src="https://airtable.com/embed/shrBSqNzSijWEfdtY?backgroundColor=red&viewControls=on" frameborder="0" onmousewheel="" 
+    width="100%" height="533" style="background: transparent; border: 1px solid#f0b802;"></iframe><br><br>
+
+    <h3>Must-buy Ingredient: Garlic!</h3>
+    <p style="text-align:left;">Most recipes have garlic</p>
+    <iframe class="airtable-embed" src="https://airtable.com/embed/shruLYzHAz4fwDtjQ?backgroundColor=red&viewControls=on" frameborder="0" onmousewheel="" 
+    width="100%" height="533" style="background: transparent; border: 1px solid #f0b802;"></iframe><br><br>
+
+    <h3>Must-buy Condiment: Soy sauce!</h3>
+    <p style="text-align:left;">Most Asian recipes uses soy sauc.</p>
+    <iframe class="airtable-embed" src="https://airtable.com/embed/shrsMUwFaMoOKKHf9?backgroundColor=red&viewControls=on" frameborder="0" onmousewheel="" 
+    width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
+</body> 
 </html>
